@@ -1,0 +1,14 @@
+{
+  "private": true,
+  "scripts": {
+    "start": "cgjs dist/main.js",
+    "build": "webpack --config ./webpack.config.js",
+    "build:watch": "NODE_ENV=development yarn build --mode development --watch --hot",
+    "build:prod": "NODE_ENV=production yarn build --mode production"
+  },
+  "dependencies": {
+    "cgjs": "^0.1.32",
+    "webpack": "^4.6.0",
+    "webpack-cli": "^2.0.15"
+  }
+}
